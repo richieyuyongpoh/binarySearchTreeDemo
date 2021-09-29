@@ -8,6 +8,18 @@ if 'hasFood' not in st.session_state:
 
 st.header("Welcome to ABC Simple Food Menu Demo")
 
+readme = st.checkbox("readme first")
+
+if readme:
+
+    st.write("""
+        This is a simple binary search tree demo using [streamlit](https://streamlit.io/) library. It is hosted on [heroku](https://www.heroku.com/). You may get the codes via [github](https://github.com/richieyuyongpoh/binarySearchTreeDemo)
+        """)
+
+    st.write ("For more info, please contact:")
+
+    st.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
+
 st.write("Choose an option from the radio button on the side bar to continue.")
 
 
